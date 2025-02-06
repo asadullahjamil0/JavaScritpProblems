@@ -6,7 +6,10 @@ const products = [
     { name: "Headphones", price: 100, category: "Electronics" }
 ];
 const getElectronics = products.filter(product => product.category === "Electronics");
-console.log("Electronics: " , getElectronics);
+console.log("Electronics: ", getElectronics);
 
 const getClothing = products.filter(product => product.category === "Clothing");
-console.log("Clothing: " , getClothing);
+console.log("Clothing: ", getClothing);
+
+const expensiveProducts = products.filter(product => product.price > 50);
+console.log("Expensive Products: ", expensiveProducts);
