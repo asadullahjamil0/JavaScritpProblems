@@ -33,14 +33,34 @@
 //     console.log(multiplyNum[index]);
 // }
 
-const prices = [100, 200, 300, 400, 500];
+// const prices = [100, 200, 300, 400, 500];
 
-var discountedPrices = prices.map(function (price) {
-    return price * 0.9; // Applying a 10% discount
+// var discountedPrices = prices.map(function (price) {
+//     return price * 0.9; // Applying a 10% discount
+// });
+
+// console.log("Original Prices: " + prices);
+// console.log("Discounted Prices: ");
+// for (let index = 0; index < discountedPrices.length; index++) {
+//     console.log(discountedPrices[index]);
+// } 
+
+
+
+
+// Another Example of Map Function
+const users = [
+    { id: 1, name: 'Alice', age: 25 },
+    { id: 2, name: 'Bob', age: 30 },
+    { id: 3, name: 'Charlie', age: 35 }
+];
+
+const userDescriptions = users.map(user => {
+    return {
+        userId: user.id,
+        fullName: user.name.toUpperCase(), // converting name to uppercase
+        userAge: user.age,
+        isAdult: user.age >= 18 // checking if the user is an adult
+    };
 });
 
-console.log("Original Prices: " + prices);
-console.log("Discounted Prices: ");
-for (let index = 0; index < discountedPrices.length; index++) {
-    console.log(discountedPrices[index]);
-} 
